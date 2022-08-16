@@ -1,0 +1,28 @@
+class student:
+	pass
+std_1=student()
+std_2=student()	
+std_1.name="Aravind"
+std_2.name="Raju"
+print(std_1.name)
+print(std_2.name)
+
+
+class student:
+    def __init__(self, name,age,gender,department,program):   
+        self.name = name    
+        self.age = age
+        self.gender = gender
+        self.department = department
+        self.program = program
+        
+    def info(self):  
+      list = f'''Name : {self.name}\n age : {self.age}\n gender : {self.gender}\n department : {self.department}\n program : {self.program}'''
+      return list
+
+    
+stud1 = student('Aravind', 20, 'male', 'CSE','BE')  
+stud2 = student( 'raju', 22,'male', 'ECE', 'BE')
+
+print(stud1.info())
+print(stud2.info())
